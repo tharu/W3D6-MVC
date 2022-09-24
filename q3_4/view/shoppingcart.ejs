@@ -7,17 +7,12 @@
 
     </head>
     <body>
-        <div>
-           
-            <%products.forEach((p)=> { %>
-                <div id="divImg">
-                    <%= p.id%>    <%= p.name%>  $ <%= p.price%><br>                   
-                    <img src="<%= p.imagePath%>" >
-                    <p><%= p.description%> </p>
-                    
-               </div>             
-            <%});%>            
-        </div>
-        <input type="button" id="addtoCart" value="Add To Cart">
+        <%products.forEach((p)=> { %>
+            <div id="divImg">
+                <%= p.id%>    <%= p.product.name%>  $ <%= p.product.price%><br>                   
+                <img src="<%= p.product.imagePath%>" >
+                <p><%= p.product.description%> </p>                
+           </div>             
+        <%});%>       
     </body>
 </html>
