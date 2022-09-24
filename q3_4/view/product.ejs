@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>User Info</title>
+        <link href="/css/style.css" rel="stylesheet"/>
+
+    </head>
+    <body>
+        <div>
+           
+            <%products.forEach((p)=> { %>
+                <div>
+                    <label>Id :</label> <%= p.id%>
+                    <label>Name :</label><%= p.name%>
+                    <label>Price  :</label><%= p.price%><br>
+                    <label>Description :</label><p><%= p.description%> </p>
+               </div>             
+            <%});%>            
+        </div>
+        <input type="button" id="addtoCart" value="Add To Cart">
+    </body>
+</html>
